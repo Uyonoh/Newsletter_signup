@@ -22,7 +22,7 @@ app.post("/", function(req, res) {
     const url = "https://us14.api.mailchimp.com/3.0/lists/" + listId;
 
     const userNAme = "mobius";
-    const key = "b368758ec569c405f7bf542e355975ec-us14";
+    const key = process.env.MAILCHIMPAPI;
 
     const data = {
         members: [
